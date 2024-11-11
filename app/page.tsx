@@ -18,7 +18,7 @@ const Home = () => {
         className="p-2 rounded-lg"
       />
 
-      <button className="bg-blue-500 text-white p-2 rounded-lg">Update</button>
+      <button className="bg-blue-500 text-white p-2 rounded-lg">Diganti Mas Nic</button>
     </div>
   );
 };
