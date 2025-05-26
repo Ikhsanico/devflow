@@ -1,16 +1,18 @@
+"use client";
+
 import { signIn } from "@/auth";
+import Authform from "@/components/forms/AuthForm";
+import { SignInSchema } from "@/lib/validations";
 import React from "react";
 
 const SignIn = () => {
   return (
-    <form
-      action={async () => {
-        "use server";
-        await signIn("github");
-      }}
-    >
-      <button type="submit">Signin with GitHub</button>
-    </form>
+    <Authform
+      formType="SIGN_IN"
+      schema={SignInSchema}
+      defaultValues={{ email: "", password: "" }}
+      onSubmit={(data: any) => Promise.resolve({ success: true, data })}
+    />
   );
 };
 

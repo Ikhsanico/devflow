@@ -42,7 +42,10 @@ const SocialAuthForm = () => {
         <span>Login with Github</span>
       </Button>
 
-      <Button className="background-dark400_light900 body-medium text-dark200_light800 rounded-2 min-h-12 flex-1 px-4 py-3.5" onClick={() => handleSignIn('google')}>
+      <Button
+        className="background-dark400_light900 body-medium text-dark200_light800 rounded-2 min-h-12 flex-1 px-4 py-3.5"
+        onClick={() => handleSignIn("google")}
+      >
         <Image
           src="/icons/google.svg"
           alt="Google Logo"
